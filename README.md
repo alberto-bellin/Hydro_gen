@@ -3,7 +3,10 @@ A two-dimensional Gaussian random field generator
 
 Hydro_gen is a computer code for generating two-dimensional space random functions with an assigned covariance structure.
 
-Instructions for compiling and using the software are provided in the manual included in this package.
+Instructions for compiling and using the software are provided in the manual included in this package. 
+
+- src directory: sources files
+- executable directory: executable files for the platforms: linux, mac and windows
 
 please cite the following paper in papers or reports that use the present software:
 
