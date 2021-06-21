@@ -1,4 +1,4 @@
-23456                 ! nseed (if set to 0 the seed is generated as random)
+0                 ! nseed (if set to 0 the seed is generated as random)
 0.25 0.25
 1
 100. 100.
