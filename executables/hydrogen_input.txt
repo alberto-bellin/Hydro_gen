@@ -9,9 +9,9 @@
 1. 1.             ! sclx scly: integral scales along the longitudinal and trasnverse directions
 3. 4.             ! xsp, ysp
 1.                ! xspa
-coef.krig         ! name of the file storing the kriging coefficients
+coef.krig         
 0                 ! ilevref
-test.out          ! name of the file storing the generated fields
+test.out          
 0                 ! iformat: format of the output file
 1			      ! FLAG_STAT: 0 do not compute the spatial statistics; 1 compute the spatial statistics
 
