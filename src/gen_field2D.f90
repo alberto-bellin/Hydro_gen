@@ -64,12 +64,17 @@
  
  if(nseed.eq.0) then
 
-    call SEED_FROM_URANDOM()
     call random_seed(size = ndim_seed)
-    ndim_seed = 1
     allocate(seed(ndim_seed))
     call random_seed(get=seed)
     nseed = seed(1)
+
+!    call SEED_FROM_URANDOM()
+!    call random_seed(size = ndim_seed)
+!    ndim_seed = 1
+!    allocate(seed(ndim_seed))
+!    call random_seed(get=seed)
+!    nseed = seed(1)
     deallocate(seed)
     write(*,*)'generated seed:',nseed
  
