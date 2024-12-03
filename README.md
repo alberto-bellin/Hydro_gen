@@ -6,7 +6,8 @@ Hydro_gen is a computer code for generating two-dimensional space random functio
 Instructions for compiling and using the software are provided in the manual included in this package. 
 
 - src directory: sources files
-- executable directory: executable files for the platforms: linux, mac and windows
+- executable directory: executable files for the platforms:
+- linux, mac (for intel, hydrogen2D_mac, and silicon M3, hydrogen2D_mac_M3, processors) and windows
 
 please cite the following paper in papers or reports that use the present software:
 
