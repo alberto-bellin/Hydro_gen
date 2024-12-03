@@ -7,7 +7,7 @@ Instructions for compiling and using the software are provided in the manual inc
 
 - src directory: sources files
 - executable directory: executable files for the platforms:
-- linux, mac (for intel, hydrogen2D_mac, and silicon M3, hydrogen2D_mac_M3, processors) and windows
+- linux, mac (for intel processor: hydrogen2D_mac, and silicon M3 processor: hydrogen2D_mac_M3) and windows
 
 please cite the following paper in papers or reports that use the present software:
 
