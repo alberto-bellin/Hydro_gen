@@ -425,9 +425,11 @@ real*8,allocatable,dimension(:,:)   :: cond
  allocate (cov1a(3,4))                  !! SEB modificato da 2,4 a 3,4
  allocate (cov2a(10))
 
+nvectpos=0
+kkcv=0
+ierror = 0
 
- 
-        if(imark.ne.1) then
+if(imark.ne.1) then
 ! 
 !       
 !          ierror=max(nn1+1,jfin)
@@ -437,16 +439,11 @@ real*8,allocatable,dimension(:,:)   :: cond
 !          write(*,*)'assigned. Suggested value:',ierror
 !          stop
 !       end if
-
-      nvectpos=0
-      kkcv=0
-      ierror = 0
-
 !
      
       call covar(filecov,idim,ilevref,nn1,jfin,itype,ddx,ddy,sclx,scly,c,betad2,cov,cov1,cov2)
       
-      end if
+end if
  
 
       
@@ -904,6 +901,8 @@ real*8,allocatable,dimension(:,:)   :: cond
                         
       end do
       close(88)
+
+      write(*,*)
 
  
 

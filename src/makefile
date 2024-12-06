@@ -1,7 +1,7 @@
 
 
-F90= ifort 
-F90FLAGS = -O3
+F90= gfortran 
+F90FLAGS = -O3 -finit-local-zero
 
 
 VPATH=.

@@ -30,6 +30,7 @@
  real*8, parameter:: zero=0.0d0
  
  real*8   :: sumy,varlogy,condm,condv,xprint,yprint
+ real*8   :: mean_r, var_r
  
  
  character*12 :: fileout
@@ -83,7 +84,8 @@
  do k=1,ngen
        r(k)= c8_normal_01 ( nseed )
  end do
- 
+
+
  
  !
  !--------------Initialize  RF to zero.--------
@@ -376,7 +378,8 @@
        sumy=dble(0.0)
        varlogy=dble(0.0)
        condm=dble(0.0)
-       condv=dble(0.0)                     
+       condv=dble(0.0)
+
   !      
   !*******************************************************
   !
@@ -392,7 +395,8 @@
              condv=condv+cond(i,j)*cond(i,j)
              cond(i,j)=cond(i,j)+cond10
           end do
-       end do    
+       end do
+
        
        condm=condm/dble(nxy)
        condv=condv/dble(nxy-1) - condm*condm 
